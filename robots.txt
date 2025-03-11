@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://amazon-quiz.github.io/amazonquiz/sitemap.xml
+Sitemap: https://amazon-quiz.github.io/amazonquiz2/sitemap.xml
