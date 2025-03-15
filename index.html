@@ -3,30 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AmazonLootDeals - Best Loot Deals Of Amazon & Flipkart🔥</title>
-  <meta name="description" content="Discover amazon loot deals, flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
-  <meta name="keywords" content="loot deals, amazon loot deals, flipkart loot deals, tech deals india, indiadesire, loot offer, amazon quiz, Amazon deals, flipkart big billion days, amazon great indian festivals, gadgets deals, electronics, discounts" />
+  <title>Amazon-LootDeals - Best Loot Deals Of Amazon & Flipkart</title>
+  <meta name="description" content="Discover amazon quiz, amazon loot deals, flipkart loot deals today. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta name="keywords" content="loot deals, amazon-quiz, amazon loot deals, flipkart loot deals, tech deals india, indiadesire, loot offer, amazon quiz, Amazon deals, flipkart big billion days, amazon great indian festivals, gadgets deals, electronics, discounts" />
   <meta name="author" content="TechLootDeals" />
+  
+  <!-- Canonical Tag for SEO -->
+  <link rel="canonical" href="https://amazon-quiz.github.io/amazonquiz2/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="AmazonLootDeals - Best Loot Deals Of Amazon & Flipkart🔥" />
+  <meta property="og:title" content="Amazon-Loot-Deals -- Best Loot Deals Of Amazon & Flipkart🔥" />
   <meta property="og:description" content="Discover amazon quiz and top loot deals of Amazon & Flipkart. Shop the best gadgets, home appliances, electronics, and accessories at unbeatable prices." />
   <meta property="og:image" content="logo.png" />
-  <meta property="og:url" content="https://amazon-quiz.github.io/amazonquiz/" />
+  <meta property="og:url" content="https://amazon-quiz.github.io/amazonquiz2/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AmazonLootDeals - Best Tech Deals in Rupees" />
-  <meta name="twitter:description" content="Discover top amazon deals in Rupees. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
+  <meta name="twitter:description" content="Discover top amazon quiz deals in Rupees. Shop the best gadgets, electronics, and accessories at unbeatable prices." />
   <meta name="twitter:image" content="images/techlootdeals-logo.png" />
 
   <!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-<link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -35,9 +39,7 @@
   <style>
     /* For mobile devices, remove fixed header behavior */
     @media (max-width: 768px) {
-      .header {
-        position: relative !important;
-      }
+      .header { position: relative !important; }
       /* Position nav absolutely so it overlays content when visible */
       .nav {
         position: absolute;
@@ -66,7 +68,7 @@
     <div class="logo-container">
       <!-- Clicking the logo toggles the mobile navigation -->
       <img src="logo.png" alt="TechLootDeals Logo" class="logo" style="cursor:pointer;" />
-      <h1 class="site-title">TechLootDeals</h1>
+      <h1 class="site-title">AmazonLootDeals</h1>
     </div>
     <nav class="nav">
       <ul>
@@ -84,6 +86,8 @@
       <h2>Find the Best Tech Deals At Lowest Price Of Amazon & Flipkart..</h2>
       <p>Explore over 30 handpicked tech products with unbeatable discounts loot deals!</p>
       <p>"Exclusive Limited-Time Offer🔥! Secure this unbeatable deal NOW—only available here with 10% off!🔥"</p>
+      <!-- Added unique tagline for differentiation -->
+      <p class="unique-tagline" style="font-size:0.9em; color:#555;">Welcome to our exclusive platform – Version 2 for discerning shoppers.</p>
       <a href="#products" class="cta-button">Shop Now</a>
     </div>
   </section>
@@ -161,6 +165,10 @@
 
   <!-- Footer -->
   <footer class="footer">
+    <!-- Unique footer note to differentiate this site -->
+    <div class="footer-unique" style="font-size:0.8em; color:#777; text-align:center; margin-bottom:5px;">
+      This portal is the independent version 2 of AmazonLootDeals – exclusive deals and offers.
+    </div>
     <p>&copy; <span id="year"></span> TechLootDeals. All rights reserved.</p>
   </footer>
 
@@ -187,15 +195,11 @@
 
   <!-- EmailJS Integration for Contact Form -->
   <script type="text/javascript">
-    // Initialize EmailJS with your user ID
     (function(){
-      emailjs.init("91SS_E_tD7Npha6kk"); // Replace with your EmailJS user ID
+      emailjs.init("91SS_E_tD7Npha6kk");
     })();
-
-    // Attach the submit event handler to the contact form
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      // Send the form data using EmailJS
       emailjs.sendForm('service_k81t8so', 'template_f5ym7ca', this)
         .then(function() {
           alert('Message sent successfully!');
